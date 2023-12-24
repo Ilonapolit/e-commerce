@@ -1,7 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
 
-const HeaderContainer = styled.header`
+import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
+
+export const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,17 +11,17 @@ const HeaderContainer = styled.header`
   color: white;
 `;
 
-const Logo = styled.div`
+export const Logo = styled.div`
   font-size: 1.5rem;
   font-weight: bold;
 `;
 
-const Navigation = styled.nav`
+export const Navigation = styled.nav`
   display: flex;
   gap: 1rem;
 `;
 
-const NavLink = styled.a`
+export const StyledNavLink = styled(NavLink)`
   color: white;
   text-decoration: none;
 `;

@@ -1,20 +1,20 @@
 
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-
+import { HeaderContainer, Logo, Navigation, StyledNavLink } from './Header.styled'
 
 const Header: React.FC = () => {
-    return (
-      <HeaderContainer>
-        <Logo>Your Logo</Logo>
-        <Navigation>
-          <NavLink href="/">Home</NavLink>
-          <NavLink href="/search">Search</NavLink>
-          <NavLink href="/cart">Cart</NavLink>
-          <NavLink href="/profile">Profile</NavLink>
-        </Navigation>
-      </HeaderContainer>
-    );
-  };
-  
-  export default Header;
+  return (
+    <HeaderContainer>
+      <Logo>Your Logo</Logo>
+      <Navigation>
+        <StyledNavLink to="/">Home</StyledNavLink>
+        <StyledNavLink to="/search">Search</StyledNavLink>
+        <StyledNavLink to="/cart">Cart</StyledNavLink>
+        <StyledNavLink to="/profile">Profile</StyledNavLink>
+      </Navigation>
+    </HeaderContainer>
+  );
+};
+
+export default Header;
