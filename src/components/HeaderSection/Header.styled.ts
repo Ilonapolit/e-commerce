@@ -25,3 +25,9 @@ export const StyledNavLink = styled(NavLink)`
   color: white;
   text-decoration: none;
 `;
+export const SearchBar = styled.input`
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  margin-right: 1rem;
+`;
