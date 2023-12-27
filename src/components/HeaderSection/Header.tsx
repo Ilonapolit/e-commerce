@@ -1,7 +1,7 @@
 
 import React , {useState} from 'react';
 import { NavLink } from 'react-router-dom';
-import { HeaderContainer, Logo, Navigation, StyledNavLink,SearchBar } from './Header.styled'
+import { CenterContainer,HeaderContainer, Logo, Navigation, StyledNavLink,SearchBar } from './Header.styled'
 
 const Header: React.FC = () => {
   const [searchTerm,setSearchTerm] = useState ('');
@@ -15,20 +15,23 @@ const Header: React.FC = () => {
   return (
     <HeaderContainer>
       <Logo>VELI STORE</Logo>
-      <Navigation>
-        <StyledNavLink to="/">Home</StyledNavLink>
-        <StyledNavLink to="/products">Products</StyledNavLink>
-        <StyledNavLink to="/cart">Cart</StyledNavLink>
-        <StyledNavLink to="/profile">Profile</StyledNavLink>
-      </Navigation>
-      <form>
+      <CenterContainer>
+      
         <SearchBar
         type="text"
         placeholder="Search products..."
         value={searchTerm}
         onChange={handleSearch}
          />
-      </form>
+      
+      <Navigation>
+        <StyledNavLink to="/">Home</StyledNavLink>
+        <StyledNavLink to="/products">Products</StyledNavLink>
+        <StyledNavLink to="/cart">Cart</StyledNavLink>
+        <StyledNavLink to="/profile">Profile</StyledNavLink>
+      </Navigation>
+      
+      </CenterContainer>
     </HeaderContainer>
   );
 };
