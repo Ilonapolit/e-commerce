@@ -23,6 +23,7 @@ import { Routes, Route } from 'react-router-dom';
 import { PublicLayout } from './layouts/PublicLayout';
 import Profile from './components/ProfileSection/Profile';
 
+
 const Home = lazy(() => import('./views/Home'));
 const Products = lazy(() => import('./views/Products'));
 
