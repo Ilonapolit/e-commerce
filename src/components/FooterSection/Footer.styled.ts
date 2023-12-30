@@ -4,7 +4,7 @@ import { InstagramOutlined, TwitterOutlined, FacebookOutlined } from '@ant-desig
 
 
 export const FooterContainer = styled.div`
-  background-color: #f8f8f8;
+  background-color:black;
   padding: 20px 0;
   text-align: center;
 `;
